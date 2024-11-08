@@ -2,8 +2,12 @@
 public class NumWords {
 	public static void main(String args[]) {
 	    // Replace this comment with your code
-		int num = (Int)(% java NumWords 5109);
-		
+		int num = Integer.parseInt(args[0]);
+		int hundreds = (num / 100);
+		int tens = ((num % 100) / 10);
+		int ones = ((num % 100) % 10);
+
+		System.out.println(hundreds + " hundreads, " + tens + " tens, " + ones + " ones.");
 
 	}
 }
