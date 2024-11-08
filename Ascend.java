@@ -10,7 +10,6 @@ public class Ascend {
 
 		System.out.println (a + " " + b + " " + c );
 
-        
 		int d = Math.min(a , b);
 		int e = Math.min(d , c);
 		int f = Math.max(a , b);
@@ -18,7 +17,6 @@ public class Ascend {
 		int h = (a + b + c - g -e);
 
 		System.out.println( e + " " + h + " " + g );
-
 
 	}
 }
