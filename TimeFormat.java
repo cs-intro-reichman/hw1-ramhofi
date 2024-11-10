@@ -24,7 +24,13 @@ public class TimeFormat {
 				format = "PM";
 				hours_new = Integer.toString(hours - 12);
 			}
+		}			
+
+		if (hours == 0)	
+		{
+			format = "PM";
 		}
+
 		if (minutes < 10) 
 		{
 			minutes_new = "0" + minutes_new;
