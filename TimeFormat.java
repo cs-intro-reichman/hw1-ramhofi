@@ -1,7 +1,6 @@
 // Represents the hh:mm time format using an AM/PM format. 
 public class TimeFormat {
 	public static void main(String[] args) {
-		int a = integer.parseInt(args[0])
 		// In Java, the command-line arguments args[0], args[1], ... are represented
 		// each by a string. In this program, the single "hh:mm" input is represented
 		// by the single command-line string argument args[0]. 
@@ -14,5 +13,21 @@ public class TimeFormat {
 		// Does the same with the minutes part of the input.
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
         // Replace this comment with the rest of your code
+		String hours_new = Integer.toString(hours);;
+		String minutes_new = Integer.toString(minutes);
+		String format = "AM";
+
+		if (hours > 10)
+		{
+			format = "PM";
+			hours_new = Integer.toString(hours - 12);
+		}
+		if (minutes < 10) 
+		{
+			minutes_new = "0" + minutes_new;
+		}
+		System.out.println(hours_new + ":" + minutes_new + " " +format);
+
+		
 	}
 }
