@@ -19,8 +19,11 @@ public class TimeFormat {
 
 		if (hours > 10)
 		{
-			format = "PM";
-			hours_new = Integer.toString(hours - 12);
+			if ( hours != 12)
+			{
+				format = "PM";
+				hours_new = Integer.toString(hours - 12);
+			}
 		}
 		if (minutes < 10) 
 		{
