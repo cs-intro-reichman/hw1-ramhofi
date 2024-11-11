@@ -27,7 +27,7 @@ public class TimeFormat {
 		
 		if (hours == 12)
 		{
-			format = "pm";
+			format = "PM";
 			hours_new = Integer.toString(hours);
 		} 
 
